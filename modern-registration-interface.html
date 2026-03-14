@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>web pages</title>
+    <style>
+    body{
+        border: 1px solid blue;
+        padding: 100px;
+        margin-left:300px;
+        margin-right:600px;
+    }
+    .form-row{
+        margin-bottom:15px;
+    }
+    #width{
+        margin-bottom: 15px;
+    }
+   input[type="email"],input[type="password"]{
+        width: 335px;
+        height:20px;
+    }
+    .fname,select{
+        height: 20px;
+    }
+    .signup{
+        width:350px;
+        margin-bottom: 15px;
+    }
+    .signup:hover{
+        color: white;
+        background: midnightblue;
+    }
+</style>
+</head>
+<body>
+    <h1>User Registration Form Demo</h1>
+    <p>Form Validated Using Javascript</p>
+    <div>
+        <input type="text" name="fname" placeholder="First Name" class="fname" id="width">
+        <input type="text" name="lname" placeholder="Last Name" class="fname" id="width">
+    </div>
+    <div class="form-row">
+        <input type="email" name="email" placeholder="Your Email">
+    </div>
+    <div class="form-row">
+        <input type="email" name="email" placeholder="Re-enter Email">
+    </div>
+    <div class="form-row">
+        <input type="password" name="password" placeholder="New Password">
+    </div>
+    <div class="bs">
+        <label>Birthday</label><br>
+        <select><option>Month</option></select>
+        <select><option>Day</option></select>
+        <select><option>Year</option></select>
+    </div>
+    <div>
+        <input type="radio" name="gender">Female
+        <input type="radio" name="gender">Male
+    </div>
+    <div>
+        <button class="signup" type="submit" >Sign up</button>
+    </div>
+</body>
+</html>
